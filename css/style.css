@@ -1,0 +1,14 @@
+form {
+    display: block;
+    text-align: center;
+}
+
+.form-error {
+    display: none;
+    color: red;
+}
+
+.passed {
+    display: none;
+    text-align: center;
+}
