@@ -1,6 +1,148 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(223, 255, 242);
+    display: block;
+    text-align: center;
+
+}
+main{
+    
+    min-height: calc(100vh - 40px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    
+
+}
+.wrapper {
+    width: 100%;
+    max-width: 964px;
+    position: relative;
+}
+
+.flex-container {
+    display: flex;
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+
+}
+
+.food-container {
+    padding: 10px;
+    margin: auto;
+    box-sizing: border-box;
+}
+.flex-container::-webkit-scrollbar {
+    height: 0;
+}
+.blog-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-left,
+.btn-right {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: white;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    outline: 0;
+    cursor: pointer;
+    position: absolute;
+}
+
+.btn-left{
+    top: 50%;
+    left: 0;
+    transform: translate(50%, -50%);
+    display: none;
+}
+
+.btn-right{
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+
+
+logo, h1{
+    font-family: 'krub', sans-serif;
+    font-size: 60px;
+    color: #744DE2;
+    text-align: center;
+    padding: 20px;
+}
+
+h1{
+    font-size: 40px;
+    color: black;
+    margin: 20px;
+}
+
+h2{
+    font-size: 25px;
+    margin: 20px;
+}
+
+h2,h3,p,li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px;
+}
+
+li{
+    margin: 10px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.buttonpos{
+    display: block;
+    text-align: center;
+    margin: 20px;
+}
+
+header,footer{
+    border: 2px solid black;
+    background-color: white;
+    
+}
+
+header > div > div > ul {
+    display: flex;
+    margin: 10px;
+    margin-left: 30px;
+}
+header > div > div > ul > a:hover {
+    transform: scale(1.2);
+}
+
+footer > div > ul {
+    display: flex;
+    justify-content: center;
+}
+footer > div > ul > a:hover {
+    transform: scale(1.2)
+}
+a > div > h2:hover {
+    transform: scale(1.2);
+}
+
 form {
     display: block;
     text-align: center;
+    
 }
 
 .form-error {
@@ -11,4 +153,43 @@ form {
 .passed {
     display: none;
     text-align: center;
+}
+
+img{
+    width: 225px;
+    height: 225px;
+    
+}
+
+
+
+/* popup image */
+
+.modal{
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.25s ease-in;
+}
+.modal.open{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.full-img{
+    position: absolute;
+    height: 70%;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    transition: all 0.1s ease-in-out;
+}
+.full-img.open {
+    transform: translate(-50%, -50%) scale(1);
 }
