@@ -116,7 +116,9 @@ p{
 .widthcontrol{
     max-width: 500px;
 }
-
+.blog-container{
+    max-width: 1300px;
+}
 li{
     margin: 10px;
     text-decoration: none;
