@@ -25,57 +25,66 @@
     </div>
   </header>
   <body>
-    <h1>Contact</h1>
-    <h2>Drop me a message below, if there is something you want me to make</h2>
-    <div class="passed">You have passed!</div>
-    <form>
-      <fieldset>
-        <div>
-          <label
-            >Name (required)<input name="name" id="name" placeholder="required"
-          /></label>
-          <div class="form-error" id="nameError">Please enter your name</div>
-        </div>
-        <div>
-          <label
-            >Subject(minimum 10 characters)
-            <input
-              name="subject"
-              id="subject"
-              placeholder="minimum 10 characters"
-          /></label>
-          <div class="form-error" id="subjectError">
-            Your subject must be of at least 10 characters
+    <main>
+      <h1>Contact</h1>
+      <h2
+        >Drop me a message below, if there is something you want me to make</h2
+      >
+      <div class="passed">Thank you for your feedback</div>
+      <form>
+        <fieldset>
+          <div>
+            <label
+              >Name (Mininum 5 characters)<input
+                name="name"
+                id="name"
+                placeholder="Minimum 5 characters"
+            /></label>
+            <div class="form-error" id="nameError"
+              >Minimum 5 characters please</div
+            >
           </div>
-        </div>
-        <div>
-          <label
-            >email <input name="email" id="email" placeholder="E-mail" />
-          </label>
-          <div class="form-error" id="emailError">
-            Please enter a legit E-mail
+          <div>
+            <label
+              >Subject(minimum 16 characters)
+              <input
+                name="subject"
+                id="subject"
+                placeholder="Minimum 16 characters"
+            /></label>
+            <div class="form-error" id="subjectError">
+              Your subject must be of at least 16 characters
+            </div>
           </div>
-        </div>
-        <div>
-          <label
-            >Address(minimum 25 characters)
-            <input
-              address="address"
-              id="address"
-              placeholder="minimum 25 characters"
-            />
-          </label>
-          <div class="form-error" id="addressError">
-            Your address must be of at least 25 characters
+          <div>
+            <label
+              >E-mail <input name="email" id="email" placeholder="E-mail" />
+            </label>
+            <div class="form-error" id="emailError">
+              Please enter a legit E-mail
+            </div>
           </div>
-          <button>Submit</button>
-        </div>
-      </fieldset>
-    </form>
+          <div>
+            <label>Message(minimum 26 characters)</label>
+            <textarea
+              id="message"
+              placeholder="minimum 26 characters"
+              rows="4"
+              cols="50"
+            ></textarea>
+
+            <div class="form-error" id="messageError">
+              Your message must be of at least 26 characters
+            </div>
+            <div> <button>Submit</button></div>
+          </div>
+        </fieldset>
+      </form>
+    </main>
     <footer>
       <div>
         <ul>
-          <a href="contact.html"><li>Contact</li></a>
+          <a href="contact.html" class="active"><li>Contact</li></a>
           <a href="aboutus.html"><li>About us</li></a>
         </ul>
       </div>

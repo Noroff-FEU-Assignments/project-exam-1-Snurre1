@@ -16,7 +16,7 @@ async function blogData() {
                             <div>
                               <h2>${result.title.rendered}</h2>
                             </div>
-                              <div>${result.content.rendered}</div>
+                              <div class="widthcontrol">${result.content.rendered}</div>
                               <div class="modal">
                               <img class="full-img" src="${result.featured_media_src_url}"></img></div>
                             `;

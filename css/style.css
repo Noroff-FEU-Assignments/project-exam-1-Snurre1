@@ -15,10 +15,9 @@ main{
     display: flex;
     align-items: center;
     flex-direction: column;
-    
-    
-
 }
+
+/* Carousel */
 .wrapper {
     width: 100%;
     max-width: 964px;
@@ -62,25 +61,33 @@ main{
     position: absolute;
 }
 
-.btn-left{
+.btn-left {
     top: 50%;
     left: 0;
     transform: translate(50%, -50%);
     display: none;
 }
 
-.btn-right{
+.btn-right {
     top: 50%;
     right: 0;
     transform: translate(-50%, -50%);
 }
+/* Size, style and pos */
+button{
+    padding: 10px;
+    border-radius: 40%;
+    background-color: white;
+}
 
-
+a , .viewbtn{
+    color: #F2A41E;
+}
 
 logo, h1{
     font-family: 'krub', sans-serif;
     font-size: 60px;
-    color: #744DE2;
+    color: whitesmoke;
     text-align: center;
     padding: 20px;
 }
@@ -101,6 +108,15 @@ h2,h3,p,li{
     margin: 20px;
 }
 
+p{  
+    max-width: 500px;
+    text-align: center;
+}
+
+.widthcontrol{
+    max-width: 500px;
+}
+
 li{
     margin: 10px;
     text-decoration: none;
@@ -115,7 +131,7 @@ li{
 
 header,footer{
     border: 2px solid black;
-    background-color: white;
+    background-color: rgb(37, 64, 87);
     
 }
 
@@ -139,10 +155,40 @@ a > div > h2:hover {
     transform: scale(1.2);
 }
 
-form {
-    display: block;
+img {
+    width: 225px;
+    height: 225px;
+}
+
+.active{
+    color: white;
+}
+
+
+
+/* Contact */
+
+.passed {
+    display: none;
     text-align: center;
-    
+}
+
+form {
+    margin: auto auto;
+    width: fit-content;
+    color: black;
+    text-align: right;
+}
+fieldset{
+    width: 500px;
+}
+fieldset>div {
+    margin: 20px;
+}
+
+label {
+    display: inline;
+    text-align: right;
 }
 
 .form-error {
@@ -150,18 +196,10 @@ form {
     color: red;
 }
 
-.passed {
-    display: none;
-    text-align: center;
+.passed{
+    font-size: 40px;
+    color: #744DE2;
 }
-
-img{
-    width: 225px;
-    height: 225px;
-    
-}
-
-
 
 /* popup image */
 

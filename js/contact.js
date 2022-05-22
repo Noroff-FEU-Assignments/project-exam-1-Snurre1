@@ -2,30 +2,30 @@ const form = document.querySelector("form");
 const peepsname = document.querySelector("#name");
 const subject = document.querySelector("#subject");
 const email = document.querySelector("#email");
-const address = document.querySelector("#address");
+const message = document.querySelector("#message");
 const nameError = document.querySelector("#nameError");
 const subjectError = document.querySelector("#subjectError");
 const emailError = document.querySelector("#emailError");
-const addressError = document.querySelector("#addressError");
+const messageError = document.querySelector("#messageError");
 const passed = document.querySelector(".passed");
 
 function validateForm(event) {
   event.preventDefault();
 
-  if (checkLength(peepsname.value, 0) === true) {
+  if (checkLength(peepsname.value, 4) === true) {
     nameError.style.display = "none";
   } else {
     nameError.style.display = "block";
   }
-  if (checkLength(subject.value, 10) === true) {
+  if (checkLength(subject.value, 15) === true) {
     subjectError.style.display = "none";
   } else {
     subjectError.style.display = "block";
   }
-  if (checkLength(address.value, 25) === true) {
-    addressError.style.display = "none";
+  if (checkLength(message.value, 25) === true) {
+    messageError.style.display = "none";
   } else {
-    addressError.style.display = "block";
+    messageError.style.display = "block";
   }
   if (validateEmail(email.value) === true) {
     emailError.style.display = "none";
@@ -33,9 +33,9 @@ function validateForm(event) {
     emailError.style.display = "block";
   }
   if (
-    checkLength(peepsname.value, 0) === true &&
-    checkLength(subject.value, 10) === true &&
-    checkLength(address.value, 25) &&
+    checkLength(peepsname.value, 4) === true &&
+    checkLength(subject.value, 15) === true &&
+    checkLength(message.value, 25) &&
     validateEmail(email.value) === true
   ) {
     passed.style.display = "block";
