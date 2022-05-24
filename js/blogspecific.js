@@ -6,7 +6,7 @@ const id = params.get("id");
 const url = "https://thomashenriksen.no/foodcorner/wp-json/wp/v2/posts/" + id;
 
 const container = document.querySelector(".gallery");
-
+const titleChange = document.querySelector("title");
 async function blogData() {
   try {
     const response = await fetch(url);
@@ -20,6 +20,9 @@ async function blogData() {
                               <div class="modal">
                               <img class="full-img" src="${result.featured_media_src_url}"></img></div>
                             `;
+    titleChange.innerText = "";
+    titleChange.innerText = `${result.title.rendered} | Foodcorner`;
+
     const preview = document.querySelector("img");
     const original = document.querySelector(".full-img");
     const modal = document.querySelector(".modal");
