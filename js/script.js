@@ -7,9 +7,9 @@ async function getData() {
     const result = await response.json();
     container.innerHTML = "";
     for (let i = 0; i < result.length; i++) {
-      container.innerHTML += `<div class="food-container">
+      container.innerHTML += `<div class="food-container"><a href="blogspecific.html?id=${result[i].id}">
                                       <h2>${result[i].title.rendered}</h2>
-                                      <img src="${result[i].featured_media_src_url}"/>
+                                      <img src="${result[i].featured_media_src_url}"/></a>
                                       <button><a href="blogspecific.html?id=${result[i].id}">View more</a></button>
                                       </div>`;
     }

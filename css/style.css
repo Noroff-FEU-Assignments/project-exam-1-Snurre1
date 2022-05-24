@@ -160,6 +160,7 @@ a > div > h2:hover {
 img {
     width: 225px;
     height: 225px;
+    cursor: pointer;
 }
 
 .active{
@@ -182,7 +183,7 @@ form {
     text-align: right;
 }
 fieldset{
-    width: 500px;
+   max-width: 500px;
 }
 fieldset>div {
     margin: 20px;

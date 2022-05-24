@@ -22,7 +22,7 @@ async function blogData() {
                             `;
     titleChange.innerText = "";
     titleChange.innerText = `${result.title.rendered} | Foodcorner`;
-
+    console.log(result.title.rendered);
     const preview = document.querySelector("img");
     const original = document.querySelector(".full-img");
     const modal = document.querySelector(".modal");
