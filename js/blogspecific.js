@@ -14,12 +14,12 @@ async function blogData() {
     container.innerHTML = "";
     container.innerHTML += `
                             <div>
-                              <h2>${result.title.rendered}</h2>
+                              <h1>${result.title.rendered}</h1>
                             </div>
                               <div class="widthcontrol">${result.content.rendered}</div>
                               <div class="modal">
-                              <img class="full-img" src="${result.featured_media_src_url}"></img></div>
-                            `;
+                              <img class="full-img" src="${result.featured_media_src_url}"alt="${result.title.rendered}"></img>
+                            </div>`;
     titleChange.innerText = "";
     titleChange.innerText = `${result.title.rendered} | Foodcorner`;
     console.log(result.title.rendered);

@@ -12,7 +12,7 @@ async function getData() {
       if (i === 10) break;
       container.innerHTML += `<div class="food-container"><a href="blogspecific.html?id=${result[i].id}">
                                       <div><h2>${result[i].title.rendered}</h2></div>
-                                        <div><img src="${result[i].featured_media_src_url}"/></div></a>
+                                        <div><img src="${result[i].featured_media_src_url}" alt="${result[i].title.rendered}"/></div></a>
                                         </div>`;
     }
     btn.onclick = function () {
@@ -21,7 +21,7 @@ async function getData() {
       for (let i = 0; i < result.length; i++) {
         container.innerHTML += `<div class="food-container"><a href="blogspecific.html?id=${result[i].id}">
                                       <div><h2>${result[i].title.rendered}</h2></div>
-                                        <div><img src="${result[i].featured_media_src_url}"/></div></a>
+                                        <div><img src="${result[i].featured_media_src_url}" alt="${result[i].title.rendered}"/></div></a>
                                         </div>`;
       }
     };

@@ -84,12 +84,13 @@ a , .viewbtn{
     color: #F2A41E;
 }
 
-logo, h1{
+.logo, h1{
     font-family: 'krub', sans-serif;
     font-size: 60px;
     color: whitesmoke;
     text-align: center;
     padding: 20px;
+    text-decoration: none;
 }
 
 h1{
@@ -224,7 +225,7 @@ label {
 
 .full-img{
     position: absolute;
-    height: 70%;
+    height: 40%;
     width: 70%;
     top: 50%;
     left: 50%;
