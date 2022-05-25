@@ -83,7 +83,9 @@ button{
 a , .viewbtn{
     color: #F2A41E;
 }
-
+.logoplacement{
+    text-align: -webkit-center;
+}
 .logo, h1{
     font-family: 'krub', sans-serif;
     font-size: 60px;
