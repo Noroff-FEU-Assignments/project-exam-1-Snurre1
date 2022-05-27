@@ -27,8 +27,8 @@
 }
 
 @media only screen and (max-width:400px){
-    .logosize{
-        font-size: 45px;
+    .logo{
+        font-size: 45px !important;
         
     }
 }
