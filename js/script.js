@@ -6,7 +6,6 @@ async function getData() {
     const response = await fetch(url);
     const result = await response.json();
     container.innerHTML = "";
-    console.log(result);
     for (let i = 0; i < result.length; i++) {
       container.innerHTML += `<div class="food-container"><a href="blogspecific.html?id=${result[i].id}">
                                       <h2>${result[i].title.rendered}</h2>
